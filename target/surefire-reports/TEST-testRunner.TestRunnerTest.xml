@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="45" failures="6" name="testRunner.TestRunnerTest" time="5.152" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_251\jre\bin"/>
+    <property name="java.vm.version" value="25.251-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Shweta Jain\Desktop\ApiTesting\Frame work\CucumberFramework-master (1)\Coyote_Automation_Test"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Shweta Jain\Desktop\ApiTesting\Frame work\CucumberFramework-master (1)\Coyote_Automation_Test"/>
+    <property name="java.runtime.version" value="1.8.0_251-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_251\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\SHWETA~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.4\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.4\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_251\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\Shweta Jain\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Program Files\TortoiseGit\bin;C:\Users\Shweta Jain\AppData\Local\Android\Sdk;C:\Users\Shweta Jain\AppData\Local\Android\Sdk\platform-tools;C:\Users\Shweta Jain\AppData\Local\Android\Sdk\build-tools;C:\Users\Shweta Jain\AppData\Local\Android\Sdk\tools;C:\Users\Shweta Jain\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\nodejs\;C:\Program Files\nodejs\node_modules\npm\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Shweta Jain\AppData\Local\Microsoft\WindowsApps;C:\Users\Shweta Jain\.dotnet\tools;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Users\Shweta Jain\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Users\Shweta Jain\AppData\Local\Android\Sdk;C:\Users\Shweta Jain\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.4\plugins\maven\lib\maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Shweta Jain"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Shweta Jain"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.4\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.4\plugins\maven\lib\maven3\boot\plexus-classworlds.license;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.4\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_251\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2020.1.1 test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="idea.version2020.1.1" value="true"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_251"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_251\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_251\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_251\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.4\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="| Coyote Software | superadmin@coyote.com | Cdn@12345 |" name="Given User navigates to &quot;Coyote Software&quot;" time="0.002"/>
+  <testcase classname="| Coyote Software | superadmin@coyote.com | Cdn@12345 |" name="When User enter emailID as &quot;superadmin@coyote.com&quot; and password as &quot;Cdn@12345&quot;" time="0"/>
+  <testcase classname="| Coyote Software | superadmin@coyote.com | Cdn@12345 |" name="And User click on login button" time="0.001"/>
+  <testcase classname="| Coyote Software | superadmin@coyote.com | Cdn@12345 |" name="Then login should be successful" time="0"/>
+  <testcase classname="| Coyote Software | superadmin@coyote.com | Cdn@12345 |" name="And User click on logout button" time="0"/>
+  <testcase classname="| Coyote Software | superadmin@coyote.com | Cdn@12345 |" name="| Coyote Software | superadmin@coyote.com | Cdn@12345 |" time="1.646"/>
+  <testcase classname="| Coyote Software |" name="Given User navigates to &quot;Coyote Software&quot;" time="0"/>
+  <testcase classname="| Coyote Software |" name="When User click on login button" time="0.001"/>
+  <testcase classname="| Coyote Software |" name="Then validate email field and password field for mandatory field" time="0"/>
+  <testcase classname="| Coyote Software |" name="| Coyote Software |" time="0.646"/>
+  <testcase classname="| Coyote Software | samkitjain2992@gmail.com | samkitjain | Invalid email/password combination |" name="Given User navigates to &quot;Coyote Software&quot;" time="0.001"/>
+  <testcase classname="| Coyote Software | samkitjain2992@gmail.com | samkitjain | Invalid email/password combination |" name="When User enter emailID as &quot;samkitjain2992@gmail.com&quot; and password as &quot;&lt;Password&gt;&quot;" time="0"/>
+  <testcase classname="| Coyote Software | samkitjain2992@gmail.com | samkitjain | Invalid email/password combination |" name="And User click on login button" time="0"/>
+  <testcase classname="| Coyote Software | samkitjain2992@gmail.com | samkitjain | Invalid email/password combination |" name="Then Error message for unregistered credential is &quot;Invalid email/password combination&quot;" time="0.01">
+    <failure message="expected:&lt;[Invalid email/password combination]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Invalid email/password combination]&gt; but was:&lt;[]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinitions.LoginSD.errorMessageForUnregisteredCredentialIs(LoginSD.java:64)
+	at ✽.Then Error message for unregistered credential is &quot;Invalid email/password combination&quot;(Login.feature:28)
+</failure>
+  </testcase>
+  <testcase classname="| Coyote Software | samkitjain2992@gmail.com | samkitjain | Invalid email/password combination |" name="| Coyote Software | samkitjain2992@gmail.com | samkitjain | Invalid email/password combination |" time="0.011">
+    <failure message="expected:&lt;[Invalid email/password combination]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Invalid email/password combination]&gt; but was:&lt;[]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinitions.LoginSD.errorMessageForUnregisteredCredentialIs(LoginSD.java:64)
+	at ✽.Then Error message for unregistered credential is &quot;Invalid email/password combination&quot;(Login.feature:28)
+</failure>
+  </testcase>
+  <testcase classname="| Coyote Software | 12345abc | #dc3545 |" name="Given User navigates to &quot;Coyote Software&quot;" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc | #dc3545 |" name="When User enter emailId as &quot;12345abc&quot;" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc | #dc3545 |" name="And User click on login button" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc | #dc3545 |" name="Then validate email field for invalid email id is" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc | #dc3545 |" name="| Coyote Software | 12345abc | #dc3545 |" time="0.714"/>
+  <testcase classname="| Coyote Software | 12345abc@ | #dc3545 |" name="Given User navigates to &quot;Coyote Software&quot;" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc@ | #dc3545 |" name="When User enter emailId as &quot;12345abc@&quot;" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc@ | #dc3545 |" name="And User click on login button" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc@ | #dc3545 |" name="Then validate email field for invalid email id is" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc@ | #dc3545 |" name="| Coyote Software | 12345abc@ | #dc3545 |" time="0.719"/>
+  <testcase classname="| Coyote Software | 12345abc@.com | #dc3545 |" name="Given User navigates to &quot;Coyote Software&quot;" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc@.com | #dc3545 |" name="When User enter emailId as &quot;12345abc@.com&quot;" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc@.com | #dc3545 |" name="And User click on login button" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc@.com | #dc3545 |" name="Then validate email field for invalid email id is" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc@.com | #dc3545 |" name="| Coyote Software | 12345abc@.com | #dc3545 |" time="0.695"/>
+  <testcase classname="| Coyote Software | abc123@@.com | #dc3545 |" name="Given User navigates to &quot;Coyote Software&quot;" time="0"/>
+  <testcase classname="| Coyote Software | abc123@@.com | #dc3545 |" name="When User enter emailId as &quot;abc123@@.com&quot;" time="0"/>
+  <testcase classname="| Coyote Software | abc123@@.com | #dc3545 |" name="And User click on login button" time="0"/>
+  <testcase classname="| Coyote Software | abc123@@.com | #dc3545 |" name="Then validate email field for invalid email id is" time="0"/>
+  <testcase classname="| Coyote Software | abc123@@.com | #dc3545 |" name="| Coyote Software | abc123@@.com | #dc3545 |" time="0.704"/>
+  <testcase classname="| Coyote Software | 12345abc@gmail | #dc3545 |" name="Given User navigates to &quot;Coyote Software&quot;" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc@gmail | #dc3545 |" name="When User enter emailId as &quot;12345abc@gmail&quot;" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc@gmail | #dc3545 |" name="And User click on login button" time="0"/>
+  <testcase classname="| Coyote Software | 12345abc@gmail | #dc3545 |" name="Then validate email field for invalid email id is" time="0.001">
+    <failure message="Error icon is not displaying expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Error icon is not displaying expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at stepDefinitions.LoginSD.validateEmailFieldForInvalidEmailIdIs(LoginSD.java:81)
+	at ✽.Then validate email field for invalid email id is(Login.feature:38)
+</failure>
+    <system-out>Test case failed due to error icon is not displaying::  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;form-control ng-invalid ng-dirty ng-touched is-invalid&apos;]&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-H5UQO0U&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\SHWETA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 607a3b535c16a6d4dcee37bc704675e4
+*** Element info: {Using=xpath, value=//input[@class=&apos;form-control ng-invalid ng-dirty ng-touched is-invalid&apos;]}
+</system-out>
+  </testcase>
+  <testcase classname="| Coyote Software | 12345abc@gmail | #dc3545 |" name="| Coyote Software | 12345abc@gmail | #dc3545 |" time="0.001">
+    <failure message="Error icon is not displaying expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Error icon is not displaying expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at stepDefinitions.LoginSD.validateEmailFieldForInvalidEmailIdIs(LoginSD.java:81)
+	at ✽.Then validate email field for invalid email id is(Login.feature:38)
+</failure>
+  </testcase>
+  <testcase classname="| Coyote Software | superadmin@coyote.com | TestCoyote001 | Invalid email/password combination |" name="Given User navigates to &quot;Coyote Software&quot;" time="0"/>
+  <testcase classname="| Coyote Software | superadmin@coyote.com | TestCoyote001 | Invalid email/password combination |" name="When User enter emailID as &quot;superadmin@coyote.com&quot; and password as &quot;TestCoyote001&quot;" time="0"/>
+  <testcase classname="| Coyote Software | superadmin@coyote.com | TestCoyote001 | Invalid email/password combination |" name="And User click on login button" time="0"/>
+  <testcase classname="| Coyote Software | superadmin@coyote.com | TestCoyote001 | Invalid email/password combination |" name="Then Validate password field for invalid password is &quot;Invalid email/password combination&quot;" time="0">
+    <failure message="Error message is not displaying expected:&lt;[Invalid email/password combination]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: Error message is not displaying expected:&lt;[Invalid email/password combination]&gt; but was:&lt;[]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at stepDefinitions.LoginSD.validatePasswordFieldForInvalidPasswordIs(LoginSD.java:88)
+	at ✽.Then Validate password field for invalid password is &quot;Invalid email/password combination&quot;(Login.feature:51)
+</failure>
+  </testcase>
+  <testcase classname="| Coyote Software | superadmin@coyote.com | TestCoyote001 | Invalid email/password combination |" name="| Coyote Software | superadmin@coyote.com | TestCoyote001 | Invalid email/password combination |" time="0">
+    <failure message="Error message is not displaying expected:&lt;[Invalid email/password combination]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: Error message is not displaying expected:&lt;[Invalid email/password combination]&gt; but was:&lt;[]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at stepDefinitions.LoginSD.validatePasswordFieldForInvalidPasswordIs(LoginSD.java:88)
+	at ✽.Then Validate password field for invalid password is &quot;Invalid email/password combination&quot;(Login.feature:51)
+</failure>
+  </testcase>
+</testsuite>

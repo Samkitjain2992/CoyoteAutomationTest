@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: testRunner.TestRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 45, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 273.642 sec <<< FAILURE!
+Then Error message for unregistered credential is "Invalid email/password combination"(| Coyote Software | samkitjain2992@gmail.com | samkitjain | Invalid email/password combination |)  Time elapsed: 0.01 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Invalid email/password combination]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinitions.LoginSD.errorMessageForUnregisteredCredentialIs(LoginSD.java:64)
+	at ✽.Then Error message for unregistered credential is "Invalid email/password combination"(Login.feature:28)
+
+| Coyote Software | samkitjain2992@gmail.com | samkitjain | Invalid email/password combination |  Time elapsed: 0.011 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Invalid email/password combination]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinitions.LoginSD.errorMessageForUnregisteredCredentialIs(LoginSD.java:64)
+	at ✽.Then Error message for unregistered credential is "Invalid email/password combination"(Login.feature:28)
+
+Then validate email field for invalid email id is(| Coyote Software | 12345abc@gmail | #dc3545 |)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: Error icon is not displaying expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at stepDefinitions.LoginSD.validateEmailFieldForInvalidEmailIdIs(LoginSD.java:81)
+	at ✽.Then validate email field for invalid email id is(Login.feature:38)
+
+| Coyote Software | 12345abc@gmail | #dc3545 |  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: Error icon is not displaying expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at stepDefinitions.LoginSD.validateEmailFieldForInvalidEmailIdIs(LoginSD.java:81)
+	at ✽.Then validate email field for invalid email id is(Login.feature:38)
+
+Then Validate password field for invalid password is "Invalid email/password combination"(| Coyote Software | superadmin@coyote.com | TestCoyote001 | Invalid email/password combination |)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Error message is not displaying expected:<[Invalid email/password combination]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at stepDefinitions.LoginSD.validatePasswordFieldForInvalidPasswordIs(LoginSD.java:88)
+	at ✽.Then Validate password field for invalid password is "Invalid email/password combination"(Login.feature:51)
+
+| Coyote Software | superadmin@coyote.com | TestCoyote001 | Invalid email/password combination |  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Error message is not displaying expected:<[Invalid email/password combination]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at stepDefinitions.LoginSD.validatePasswordFieldForInvalidPasswordIs(LoginSD.java:88)
+	at ✽.Then Validate password field for invalid password is "Invalid email/password combination"(Login.feature:51)
+

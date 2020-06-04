@@ -1,0 +1,147 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14806104600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.before_method()"
+            }
+          },
+          {
+            "result": {
+              "duration": 14292229400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.getUrl()"
+            }
+          },
+          {
+            "result": {
+              "duration": 49934100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSD.before_method()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Verify error message for unregistered credential",
+        "description": "",
+        "id": "login-page-functionality;verify-error-message-for-unregistered-credential;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 695308500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.closeWindow()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 826657200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User navigates to \"Coyote Software\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Coyote Software",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginSD.user_navigates_to(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5949806500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User enter emailID as \"samkitjain2992@gmail.com\" and password as \"\u003cPassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "samkitjain2992@gmail.com",
+                  "offset": 23
+                },
+                {
+                  "val": "\u003cPassword\u003e",
+                  "offset": 66
+                }
+              ],
+              "location": "LoginSD.user_enter_emailID_as_and_password_as(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3090472200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User click on login button",
+            "match": {
+              "location": "LoginSD.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 126467700,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Error message for unregistered credential is \"Invalid email/password combination\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid email/password combination",
+                  "offset": 46
+                }
+              ],
+              "location": "LoginSD.errorMessageForUnregisteredCredentialIs(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login Page Functionality",
+    "description": "",
+    "id": "login-page-functionality",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]
