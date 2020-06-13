@@ -5,15 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import stepDefinitions.BaseClass;
-import utilities.WaitHelper;
+import java.io.IOException;
 
-public class LoginPage {
 
-    public LoginPage() {
+public class LoginPage extends BasePage  {
 
-        PageFactory.initElements(BaseClass.driver, this);
-
+    public LoginPage() throws IOException {
+        super();
+        PageFactory.initElements( driver, this);
     }
 
     @FindBy(xpath = "//input[@type='text']")
@@ -49,44 +48,61 @@ public class LoginPage {
     @FindBy(xpath = "//p[@class='notifier__notification-message']")
     WebElement errorMessageWrongPassword;
 
+    @FindBy(xpath = "//button[@class='notifier__notification-button']")
+    WebElement toastLoginMessage;
+
+    @FindBy(xpath = "//a[text()='Forgot Password?']")
+    WebElement forgetPasswordLink;
+
+    @FindBy(xpath = "//input[@type='text']")
+    WebElement forgetPageEmailTextBox;
+
+    @FindBy(xpath = "//button[@class='btn btn-blue width-80']")
+    WebElement clickOnForgetPageNextButton;
+
+    @FindBy(xpath = "//p[@class='notifier__notification-message'][1]")
+    WebElement errorMessageForWrongEmailId;
+
 
     public String PageTitle() {
-        return BaseClass.driver.getTitle();
+        return waiteForePageTitle();
     }
 
-    public void setEmailId(String emailId) {
-        WaitHelper.WaitForElement(BaseClass.driver, emailIdBox, 20);
-        emailIdBox.click();
-        WaitHelper.WaitForElement(BaseClass.driver, emailIdBox, 20);
-        emailIdBox.sendKeys(emailId);
+    public void setEmailId(String emailId) throws Exception {
+        sendKeysToWebElement(emailIdBox,emailId);
+//        WaitHelper.WaitForElement(driver, emailIdBox, 20);
+//        emailIdBox.click();
+//        WaitHelper.WaitForElement(driver, emailIdBox, 20);
+//        emailIdBox.sendKeys(emailId);
     }
 
-    public void setPassword(String password) {
-        passwordBox.click();
-        passwordBox.sendKeys(password);
+    public void setPassword(String password) throws Exception {
+        sendKeysToWebElement(passwordBox,password);
+//        passwordBox.click();
+//        passwordBox.sendKeys(password);
     }
 
-    public void clickLoginButton() {
-        loginButton.click();
+    public void clickLoginButton() throws IOException, InterruptedException {
+        waitAndClickElement(loginButton);
+
     }
 
-    public void clickLogoutButton() throws InterruptedException {
-        Thread.sleep(15000);
-        clickPerform.click();
-        Thread.sleep(5000);
-        logoutButton.click();
+    public void clickLogoutButton() throws InterruptedException, IOException {
+        waitAndClickElement(toastLoginMessage);
+        //waitAndClickElement(clickPerform);
+         Thread.sleep(3000);
+        waitAndClickElement(logoutButton);
     }
 
-    public String unregisteredCredentialMessage() throws InterruptedException {
-       // Thread.sleep(3000);
+    public String unregisteredCredentialMessage() {
+        // Thread.sleep(3000);
         return errorMessage.getText();
     }
 
     public String errorMessageColor() {
         String textBoxColor = colorEmailIdBox.getCssValue("border-color");
-        String hexColor = Color.fromString(textBoxColor).asHex();
 
-        return hexColor;
+        return Color.fromString(textBoxColor).asHex();
     }
 
     public boolean errorIconForInvalidEmailId() {
@@ -120,10 +136,23 @@ public class LoginPage {
         }
     }
 
-    public String errorMessageWrongPassword() throws InterruptedException {
-        Thread.sleep(5000);
+    public String errorMessageWrongPassword() {
         return errorMessageWrongPassword.getText();
+    }
+    public void clickForgetPasswordLink() throws IOException, InterruptedException {
+        waitAndClickElement(forgetPasswordLink);
+    }
 
+    public void setForgetEmailIdBox(String emailId) throws Exception {
+        sendKeysToWebElement(forgetPageEmailTextBox,emailId);
+    }
+    public void clickForgetPageNextButton() throws IOException, InterruptedException {
+        waitAndClickElement(clickOnForgetPageNextButton);
+    }
+
+    public String errorMessageInvalidEmailIdForgetPasswordPage() throws InterruptedException {
+        Thread.sleep(2000);
+        return errorMessageForWrongEmailId.getText();
     }
 
 }

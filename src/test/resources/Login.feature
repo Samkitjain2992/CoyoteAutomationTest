@@ -20,7 +20,7 @@ Feature: Login Page Functionality
       | CoyoteApplication |
       | Coyote Software   |
 
-  @Smoke
+
   Scenario Outline:Verify error message for unregistered credential
     Given User navigates to "<CoyoteApplication>"
     When User enter emailID as "<emailId>" and password as "<Password>"
@@ -52,18 +52,18 @@ Feature: Login Page Functionality
     Examples:
       | CoyoteApplication | emailId               | password      | message                            |
       | Coyote Software   | superadmin@coyote.com | TestCoyote001 | Invalid email/password combination |
+  @Smoke
+  Scenario Outline:Verify the functionality of reset password with invalid email address
+    Given User navigates to "<CoyoteApplication>"
+    When User enter emailId as "<emailId>"
+    And User click on forgot password link
+    And User enter invalid email id as "<Invalid emailId>"
+    And User click on Next button
+    Then Verify error message for invalid email address "<message>"
+    Examples:
+      | CoyoteApplication | emailId               | Invalid emailId          | message                            |
+      | Coyote Software   | superadmin@coyote.com | samkitjain2992@gmail.com | User not exists with given email id -  |
 
-#  Scenario Outline:Verify the functionality of reset password with invalid email address
-#    Given User navigates to "<CoyoteApplication>"
-#    When User enter emailId as "<emailId>"
-#    And User click on forgot password link
-#    And User enter invalid email id as "<Invalid emailId>"
-#    And User click on Next button
-#    Then Verify error message for invalid email address "<message>"
-#    Examples:
-#      | CoyoteApplication | emailId               | Invalid emailId          | message                            |
-#      | Coyote Software   | superadmin@coyote.com | samkitjain2992@gmail.com | Invalid email/password combination |
-#
 #    Scenario Outline:Verify functionality of forgot password link
 #      Given User navigates to "<CoyoteApplication>"
 #      When User enter emailId as "<emailId>"
